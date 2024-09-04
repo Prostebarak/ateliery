@@ -20,6 +20,7 @@ public class PlayerControler : MonoBehaviour
         bool forward_sprint = Input.GetKey(KeyCode.LeftShift);
         bool isSprinting = animator.GetBool("isSprinting");
         bool jump = Input.GetKey(KeyCode.Space);
+        bool isJumping = animator.GetBool("isJumping");
         bool backward = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
         bool isBackwards = animator.GetBool("isBackward");
         bool left = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
@@ -48,10 +49,16 @@ public class PlayerControler : MonoBehaviour
             animator.SetBool("isSprinting", false);
         }
 
+        if (isJumping && !jump)
+        {
+            animator.SetBool("isJumping", false);
+        }
+
         if (jump)
         {
-            animator.SetTrigger("isJumping");
+            animator.SetBool("isJumping", true);
         }
+
 
         if (backward && !isBackwards)
         {
