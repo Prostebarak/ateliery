@@ -9,8 +9,9 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private DialogNodeGraph dialogGraph;
 
 
-    private void Start()
+    public void dialogueStart()
     {
+        print("okay");
         dialogBehaviour.StartDialog(dialogGraph);
     }
 }
