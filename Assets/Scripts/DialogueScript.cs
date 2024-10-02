@@ -11,7 +11,6 @@ public class DialogueScript : MonoBehaviour
 
     public void dialogueStart()
     {
-        print("okay");
         dialogBehaviour.StartDialog(dialogGraph);
     }
 }
