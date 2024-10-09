@@ -2,6 +2,8 @@
 
 public class FirstPersonLook : MonoBehaviour
 {
+    public InteractionScript interactionScript; // Reference to interaction script
+
     [SerializeField]
     Transform character;
     public float sensitivity = 2;
@@ -19,6 +21,7 @@ public class FirstPersonLook : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(interactionScript.dialogueRunning);
 
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
@@ -28,7 +31,7 @@ public class FirstPersonLook : MonoBehaviour
     void Update()
     {
         // Toggle cursor lock/unlock when pressing a specific key (e.g., "Escape")
-        if (Input.GetKey(KeyCode.Escape))
+        if (interactionScript.dialogueRunning == true)
         {
             if (Cursor.lockState == CursorLockMode.Locked)
             {

@@ -20,6 +20,12 @@ public class InteractionScript : MonoBehaviour
         
     }
 
+    void DialogueFinished()
+    {
+        dialogueRunning = false;
+    }
+
+
     void OnTriggerStay(Collider other)
     {
         
@@ -36,8 +42,9 @@ public class InteractionScript : MonoBehaviour
                     eAlreadyPressed = true;
                     meshRendererText.enabled = false;
                     dialogueScript.dialogueStart();
+                    dialogueScript.dialogBehaviour.AddListenerToDialogFinishedEvent(DialogueFinished);
                 }
-
+                
             }
             
 

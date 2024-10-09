@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DialogueScript : MonoBehaviour
 {
-    [SerializeField] private DialogBehaviour dialogBehaviour;
+    [SerializeField] public DialogBehaviour dialogBehaviour;
     [SerializeField] private DialogNodeGraph dialogGraph;
 
 
@@ -13,4 +13,5 @@ public class DialogueScript : MonoBehaviour
     {
         dialogBehaviour.StartDialog(dialogGraph);
     }
+    
 }
