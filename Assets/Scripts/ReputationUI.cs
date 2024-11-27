@@ -17,6 +17,21 @@ public class ReputationUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Reputation reputation = gameObject.GetComponent<Reputation>();
+
+        if (reputation.reputationValue >= 70)
+        {
+            gameObject.GetComponent<Image>().sprite = bestReputation;
+        }
+
+        else if (reputation.reputationValue < 70 && reputation.reputationValue > 40)
+        {
+            gameObject.GetComponent<Image>().sprite = midReputation;
+        }
+
+        else
+        {
+            gameObject.GetComponent<Image>().sprite = badReputation;
+        }
     }
 }

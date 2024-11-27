@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 640
-    y: 36.666664
+    x: 624
+    y: 80.666664
     width: 190
     height: 135
   isDragging: 0
@@ -65,15 +65,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 116
-    y: 109.666664
+    x: 104
+    y: 162.66666
     width: 190
     height: 135
   isDragging: 0
   isSelected: 1
   sentence:
-    characterName: Petr
-    text: First sentence
+    characterName: "m\u011B\u0161\u0165an"
+    text: "Ahoj Hr\xE1\u010Di, sme r\xE1di \u017Ee si dorazil."
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 7630839286314410736}
@@ -95,12 +95,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 633
-    y: 239.66666
+    x: 617
+    y: 283.66666
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: petr
     text: druhy
@@ -125,12 +125,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 366
-    y: 115.66667
+    x: 350
+    y: 159.66667
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   answers:
   - first answer
   - second answer

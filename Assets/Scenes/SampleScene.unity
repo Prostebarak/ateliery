@@ -2670,7 +2670,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3888611276550310276, guid: 03fb6f49d936d5e429b639fccb1f29a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1542273707}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4520716785383396158, guid: 03fb6f49d936d5e429b639fccb1f29a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2061270482}
   m_SourcePrefab: {fileID: 100100000, guid: 03fb6f49d936d5e429b639fccb1f29a6, type: 3}
 --- !u!4 &551657776 stripped
 Transform:
@@ -5064,6 +5067,11 @@ Transform:
   - {fileID: 1133818012}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &953727405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4520716785383396158, guid: 03fb6f49d936d5e429b639fccb1f29a6, type: 3}
+  m_PrefabInstance: {fileID: 548086893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &955161832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 425192, guid: d16f3d50bed5cc5489da9033dd814415, type: 3}
@@ -6775,6 +6783,7 @@ GameObject:
   - component: {fileID: 1257608382}
   - component: {fileID: 1257608381}
   - component: {fileID: 1257608380}
+  - component: {fileID: 1257608383}
   m_Layer: 5
   m_Name: face
   m_TagString: Untagged
@@ -6854,6 +6863,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257608378}
   m_CullTransparentMesh: 1
+--- !u!114 &1257608383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257608378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b004426677e405149a3168e69238527a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reputationValue: 50
 --- !u!1001 &1262243495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8471,6 +8493,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a44f35a46b75e941b4ca602c1b9a78d, type: 3}
+--- !u!1 &1521984218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521984220}
+  - component: {fileID: 1521984219}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1521984219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521984218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f4d8c4a6327f4f86cbccedd960682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeQuests: []
+--- !u!4 &1521984220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521984218}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683.82855, y: -1141.9836, z: 1807.1659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1524227959
 GameObject:
   m_ObjectHideFlags: 0
@@ -11189,6 +11256,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3888611276550310276, guid: 03fb6f49d936d5e429b639fccb1f29a6, type: 3}
   m_PrefabInstance: {fileID: 548086893}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2061270482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953727405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d9ed348a4e81a4bac7fc9c61853559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
+  questManager: {fileID: 1521984219}
 --- !u!4 &2064569527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
@@ -11702,3 +11783,4 @@ SceneRoots:
   - {fileID: 1422580895}
   - {fileID: 1995035431}
   - {fileID: 443765055}
+  - {fileID: 1521984220}

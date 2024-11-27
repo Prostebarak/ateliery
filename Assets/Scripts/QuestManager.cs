@@ -1,26 +1,26 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    public List<Quest> quests = new List<Quest>();
-    void Start()
+    public List<Quest> activeQuests = new List<Quest>();
+
+    public void AddQuest(Quest quest)
     {
-        Quest quest1 = new Quest("Find the lost sword", "Find the sword in the forest");
-        quests.Add(quest1);
+        if (!activeQuests.Contains(quest))
+        {
+            activeQuests.Add(quest);
+            Debug.Log($"Quest pøidán: {quest.questName}");
+        }
     }
 
-    public void CompleteQuest(string questName)
+    public void CompleteQuest(Quest quest)
     {
-        Quest quest = quests.Find(q => q.questName == questName);
-        if (quest != null)
+        if (activeQuests.Contains(quest))
         {
-            quest.Completequest();
-        }
-        else
-        {
-            Debug.LogWarning($"Quest {questName} not found!");
+            quest.isCompleted = true;
+            activeQuests.Remove(quest);
+            Debug.Log($"Quest splnìn: {quest.questName}");
         }
     }
 }
