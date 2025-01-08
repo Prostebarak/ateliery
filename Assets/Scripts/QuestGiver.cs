@@ -12,7 +12,7 @@ public class QuestGiver : MonoBehaviour
             if (quest != null && questManager != null)
             {
                 questManager.AddQuest(quest);
-                Debug.Log($"Quest pøijat: {quest.questName}");
+                
             }
             else
             {

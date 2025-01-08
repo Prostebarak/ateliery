@@ -13,5 +13,6 @@ public class DialogueScript : MonoBehaviour
     {
         dialogBehaviour.StartDialog(dialogGraph);
     }
-    
+
+
 }

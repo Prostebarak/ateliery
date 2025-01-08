@@ -6,6 +6,7 @@ public class interactionCamera : MonoBehaviour
 {
     public Rigidbody rb;
     public InteractionScript interactionScript; // Reference to interaction script
+    public InteractionControler interactionControler;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +18,9 @@ public class interactionCamera : MonoBehaviour
     {
         if(Cursor.lockState == CursorLockMode.None)
         {
-            print(Cursor.lockState);
+            //print(Cursor.lockState);
         }
-        if (interactionScript.dialogueRunning == true)
+        if (interactionControler.anyDialogRunning == true)
         {
             if (Cursor.lockState == CursorLockMode.Locked)
             {
@@ -30,11 +31,11 @@ public class interactionCamera : MonoBehaviour
             }
 
         }
-        else if (interactionScript.dialogueRunning == false)
+        else if (interactionControler.anyDialogRunning == false)
         {
             Cursor.lockState = CursorLockMode.Locked; // Lock the cursor again
             Cursor.visible = false;                   // Hide the cursor
-
+            //print(Cursor.lockState);
         }
 
     }

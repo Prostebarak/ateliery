@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 334.39
+      value: 345.4
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -853,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.12
+      value: 23.38
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -921,10 +921,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1607218631}
+      addedObject: {fileID: 1607218647}
     - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1607218647}
+      addedObject: {fileID: 1607218652}
     - targetCorrespondingSourceObject: {fileID: 1593727746557118, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 335704951}
@@ -1800,6 +1800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1607218641}
   interactionScript: {fileID: 514699288}
+  interactionControler: {fileID: 660551236}
 --- !u!114 &335704951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,6 +1815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1607218641}
   interactionScript: {fileID: 1542273711}
+  interactionControler: {fileID: 660551236}
 --- !u!1001 &339926545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,6 +2564,7 @@ GameObject:
   - component: {fileID: 514699284}
   - component: {fileID: 514699287}
   - component: {fileID: 514699288}
+  - component: {fileID: 514699289}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -2683,7 +2686,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: {fileID: 1175451199}
   dialogueRunning: 0
-  interactionControler: {fileID: 0}
+  interactionControler: {fileID: 660551236}
+  dialogueScript: {fileID: 0}
+--- !u!114 &514699289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514699281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d722729aab05b4180c4cebbea70e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetQuest: {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
+  questManager: {fileID: 1521984219}
+  nextQuest: {fileID: 11400000, guid: b99715cdb5ee59f40950497d99f64bbf, type: 2}
 --- !u!4 &517211887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 425192, guid: d16f3d50bed5cc5489da9033dd814415, type: 3}
@@ -9561,7 +9580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: {fileID: 1995035429}
   dialogueRunning: 0
-  interactionControler: {fileID: 0}
+  interactionControler: {fileID: 660551236}
+  dialogueScript: {fileID: 1607218647}
 --- !u!114 &1542273714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9587,7 +9607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d9ed348a4e81a4bac7fc9c61853559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
+  quest: {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
   questManager: {fileID: 1521984219}
 --- !u!4 &1543606518 stripped
 Transform:
@@ -9954,18 +9974,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
   m_PrefabInstance: {fileID: 113711760}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1607218631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607218625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2499a24ffcc1dc547ae94bc034988bb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1607218641 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 54063890643546284, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -9985,6 +9993,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBehaviour: {fileID: 95781999}
   dialogGraph: {fileID: 11400000, guid: b326b0f55bb41664581a20e05b1b7123, type: 2}
+--- !u!114 &1607218652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607218625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f70c7d6b97e8204fb87fb1900d915d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBehaviour: {fileID: 95781999}
+  dialogGraph: {fileID: 11400000, guid: 378a7761df58334499d054334137573c, type: 2}
 --- !u!1001 &1611602226
 PrefabInstance:
   m_ObjectHideFlags: 0

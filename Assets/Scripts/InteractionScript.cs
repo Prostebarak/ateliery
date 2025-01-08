@@ -9,6 +9,7 @@ public class InteractionScript : MonoBehaviour
     bool eAlreadyPressed = false;
     public bool dialogueRunning = false;
     public InteractionControler interactionControler;
+    public DialogueScript dialogueScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,7 @@ public class InteractionScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             bool pressedE = Input.GetKey(KeyCode.E);
-            DialogueScript dialogueScript = other.gameObject.GetComponent<DialogueScript>();
+            
             MeshRenderer meshRendererText = interactionText.GetComponent<MeshRenderer>();
             if (pressedE && eAlreadyPressed == false)
             {

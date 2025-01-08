@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baba6ee5592b1724fa8ae55b54c4b0d0, type: 3}
   m_Name: FirstTalk
   m_EditorClassIdentifier: 
-  questName: hledani Miry
+  questName: Talk to villager
   description: "Starosta t\u011B po\u017E\xE1dal, abys na\u0161el str\xE1\u017Ekyni
     Mirru, kter\xE1 byla posledn\xED, kdo hl\xEDdal artefakt."
   isCompleted: 0
