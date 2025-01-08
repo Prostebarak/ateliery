@@ -2,12 +2,12 @@
 
 public class FirstPersonLook : MonoBehaviour
 {
-    public InteractionScript interactionScript; // Reference to interaction script
 
     [SerializeField]
     Transform character;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
+
 
     Vector2 velocity;
     Vector2 frameVelocity;
@@ -21,7 +21,6 @@ public class FirstPersonLook : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(interactionScript.dialogueRunning);
 
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
@@ -30,22 +29,6 @@ public class FirstPersonLook : MonoBehaviour
 
     void Update()
     {
-        // Toggle cursor lock/unlock when pressing a specific key (e.g., "Escape")
-        if (interactionScript.dialogueRunning == true)
-        {
-            if (Cursor.lockState == CursorLockMode.Locked)
-            {
-                Cursor.lockState = CursorLockMode.None; // Unlock the cursor
-                Cursor.visible = true;                 // Make the cursor visible
-            }
-            
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked; // Lock the cursor again
-            Cursor.visible = false;                   // Hide the cursor
-        }
-
         // Your existing camera control code
         if (Cursor.lockState == CursorLockMode.Locked)
         {

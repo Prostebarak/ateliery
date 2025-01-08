@@ -1,0 +1,386 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6590094996898650720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 313.66666
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Pomoc bude odm\u011Bn\u011Bna! Dostane\u0161 zlato i vd\u011Bk vesnice."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3842493090247093284}
+  childNode: {fileID: -2982242682578742579}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-6520530360123135982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -1199
+    y: 328.6667
+    width: 190
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Samoz\u0159ejm\u011B! Co se stalo?"
+  parentSentenceNode: {fileID: 8154618832567710181}
+  childSentenceNodes:
+  - {fileID: 250109508064426979}
+--- !u!114 &-3842493090247093284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 54
+    y: 200.66666
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Dob\u0159e kde j\xED najdu?"
+  - Co za to dostanu?
+  parentSentenceNode: {fileID: 8430983161515109632}
+  childSentenceNodes:
+  - {fileID: 8618221109266587906}
+  - {fileID: -6590094996898650720}
+--- !u!114 &-3342909018372135599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -672
+    y: 163.66672
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Jednoho dne v\u0161ak artefakt z\xE1hadn\u011B zmizel, co\u017E zp\u016Fsobilo
+      chaos."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3264385051343768911}
+  childNode: {fileID: 7134966940035804501}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-3264385051343768911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -880
+    y: 319.6667
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Tento artefakt zaji\u0161\u0165oval \xFArodu, odh\xE1n\u011Bl divok\xE9
+      bestie a chr\xE1nil obyvatele p\u0159ed temn\xFDmi silami.Tento artefakt zaji\u0161\u0165oval
+      \xFArodu, odh\xE1n\u011Bl divok\xE9 bestie a chr\xE1nil obyvatele p\u0159ed
+      temn\xFDmi silami.Tento artefakt zaji\u0161\u0165oval \xFArodu, odh\xE1n\u011Bl
+      divok\xE9 bestie a chr\xE1nil obyvatele p\u0159ed temn\xFDmi silami."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 250109508064426979}
+  childNode: {fileID: -3342909018372135599}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-2982242682578742579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 507
+    y: 224.66669
+    width: 190
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Dob\u0159e jdu na to!"
+  parentSentenceNode: {fileID: -6590094996898650720}
+  childSentenceNodes: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: "M\u011Bstan"
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -6520530360123135982}
+  - {fileID: 8154618832567710181}
+  - {fileID: 250109508064426979}
+  - {fileID: -3264385051343768911}
+  - {fileID: -3342909018372135599}
+  - {fileID: 7134966940035804501}
+  - {fileID: 3351895580875393073}
+  - {fileID: 8430983161515109632}
+  - {fileID: -3842493090247093284}
+  - {fileID: 8618221109266587906}
+  - {fileID: -6590094996898650720}
+  - {fileID: -2982242682578742579}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &250109508064426979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -1037
+    y: 159.66669
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Na\u0161e vesnice byla po stalet\xED chr\xE1n\u011Bna starod\xE1vn\xFDm
+      artefaktem."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -6520530360123135982}
+  childNode: {fileID: -3264385051343768911}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3351895580875393073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -261
+    y: 185.66669
+    width: 190
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Kdo by mohl ukr\xE1st n\u011Bco tak d\u016Fle\u017Eit\xE9ho?"
+  parentSentenceNode: {fileID: 7134966940035804501}
+  childSentenceNodes:
+  - {fileID: 8430983161515109632}
+--- !u!114 &7134966940035804501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -477
+    y: 320.6667
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Tv\xFDm \xFAkolem je zjistit, kdo artefakt ukradl, a vr\xE1tit ho zp\u011Bt,
+      aby vesnice mohla op\u011Bt vzkv\xE9tat."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3342909018372135599}
+  childNode: {fileID: 3351895580875393073}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &8154618832567710181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -1324
+    y: 152.66672
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "Cizin\u010De! Kone\u010Dn\u011B n\u011Bkdo ochotn\xFD pomoci."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -6520530360123135982}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &8430983161515109632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -141
+    y: 326.6667
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "To nev\xEDm, ale posledn\xED, kdo hl\xEDdal artefakt, byla str\xE1\u017Ekyn\u011B
+      Mirra. Najdi ji. Ur\u010Dit\u011B bude n\u011Bco v\u011Bd\u011Bt."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 3351895580875393073}
+  childNode: {fileID: -3842493090247093284}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &8618221109266587906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 268
+    y: 120.66666
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "M\xE1 d\u016Fm nakonci vesnice.Hned"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3842493090247093284}
+  childNode: {fileID: -2982242682578742579}
+  isExternalFunc: 0
+  externalFunctionName: 

@@ -8,6 +8,7 @@ public class InteractionScript : MonoBehaviour
     public TextMeshPro interactionText;
     bool eAlreadyPressed = false;
     public bool dialogueRunning = false;
+    public InteractionControler interactionControler;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class InteractionScript : MonoBehaviour
     void DialogueFinished()
     {
         dialogueRunning = false;
+        interactionControler.anyDialogRunning = false;
     }
 
 
@@ -38,6 +40,7 @@ public class InteractionScript : MonoBehaviour
             {
                 if (dialogueScript != null)
                 {
+                    interactionControler.anyDialogRunning = true;
                     dialogueRunning = true;
                     eAlreadyPressed = true;
                     meshRendererText.enabled = false;
