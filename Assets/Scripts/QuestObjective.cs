@@ -8,31 +8,16 @@ public class QuestObjective : MonoBehaviour
     public QuestManager questManager;
     public Quest nextQuest; // Další quest který hráè dostane po splnìní
 
-    private void CompleteQuest()
+    public void CompleteQuest()
     {
-        questManager.CompleteQuest(targetQuest);
-        Debug.Log($"Quest splnìn: {targetQuest.questName}");
-
-        if (nextQuest != null)
+        if (questManager.activeQuests.Contains(targetQuest) && !targetQuest.isCompleted)
         {
-            questManager.AddQuest(nextQuest);
-            Debug.Log($"Nový quest pøijat: {nextQuest.questName}");
-        }
-    }
+            questManager.CompleteQuest(targetQuest);
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.CompareTag("Player"))
-        {
-            
-            // Zkontroluje jestli hráè má tento quest
-            if (questManager.activeQuests.Contains(targetQuest) && !targetQuest.isCompleted)
+            if (nextQuest != null)
             {
-                CompleteQuest();
-               
+                questManager.AddQuest(nextQuest);
             }
         }
     }
 }
-

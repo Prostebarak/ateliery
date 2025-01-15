@@ -899,6 +899,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.288
       objectReference: {fileID: 0}
+    - target: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114657890492222300, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: rb
       value: 
@@ -922,9 +926,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1607218647}
-    - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1607218652}
     - targetCorrespondingSourceObject: {fileID: 1593727746557118, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 335704951}
@@ -2562,11 +2563,10 @@ GameObject:
   - component: {fileID: 514699286}
   - component: {fileID: 514699285}
   - component: {fileID: 514699284}
-  - component: {fileID: 514699287}
   - component: {fileID: 514699288}
   - component: {fileID: 514699289}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: MiraSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2658,20 +2658,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514699281}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &514699287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514699281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d9ed348a4e81a4bac7fc9c61853559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: b99715cdb5ee59f40950497d99f64bbf, type: 2}
-  questManager: {fileID: 1521984219}
 --- !u!114 &514699288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,7 +2673,10 @@ MonoBehaviour:
   interactionText: {fileID: 1175451199}
   dialogueRunning: 0
   interactionControler: {fileID: 660551236}
-  dialogueScript: {fileID: 0}
+  dialogueScript: {fileID: 1607218647}
+  targetQuest: {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
+  questManager: {fileID: 1521984219}
+  questObjective: {fileID: 514699289}
 --- !u!114 &514699289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5213,107 +5202,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16f3d50bed5cc5489da9033dd814415, type: 3}
---- !u!1 &898020543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 898020547}
-  - component: {fileID: 898020546}
-  - component: {fileID: 898020545}
-  - component: {fileID: 898020544}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &898020544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898020543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &898020545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898020543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &898020546
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898020543}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &898020547
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898020543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!224 &904194844 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8426339225851941708, guid: 267d0f0f1215e9b4585dbf0e33830747, type: 3}
@@ -7353,6 +7241,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slider Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 6982811872352222758, guid: 267d0f0f1215e9b4585dbf0e33830747, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982811872352222758, guid: 267d0f0f1215e9b4585dbf0e33830747, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8421159728171905120, guid: 267d0f0f1215e9b4585dbf0e33830747, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -9332,7 +9228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802f4d8c4a6327f4f86cbccedd960682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeQuests: []
+  activeQuests:
+  - {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
+  allQuests:
+  - {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
+  - {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
+  - {fileID: 11400000, guid: b99715cdb5ee59f40950497d99f64bbf, type: 2}
 --- !u!4 &1521984220
 Transform:
   m_ObjectHideFlags: 0
@@ -9471,10 +9372,9 @@ GameObject:
   - component: {fileID: 1542273709}
   - component: {fileID: 1542273708}
   - component: {fileID: 1542273711}
-  - component: {fileID: 1542273714}
-  - component: {fileID: 1542273715}
+  - component: {fileID: 1542273712}
   m_Layer: 0
-  m_Name: InteractionSphere
+  m_Name: FirstTalkSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9582,33 +9482,24 @@ MonoBehaviour:
   dialogueRunning: 0
   interactionControler: {fileID: 660551236}
   dialogueScript: {fileID: 1607218647}
---- !u!114 &1542273714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542273706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 802f4d8c4a6327f4f86cbccedd960682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeQuests: []
---- !u!114 &1542273715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542273706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d9ed348a4e81a4bac7fc9c61853559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
+  targetQuest: {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
   questManager: {fileID: 1521984219}
+  questObjective: {fileID: 1542273712}
+--- !u!114 &1542273712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542273706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d722729aab05b4180c4cebbea70e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetQuest: {fileID: 11400000, guid: 6dbbe59d53c46524c8130b2c3f62f58f, type: 2}
+  questManager: {fileID: 1521984219}
+  nextQuest: {fileID: 11400000, guid: df525b07fdbfb8740a7d387cb1a5a15c, type: 2}
 --- !u!4 &1543606518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1268050992877243359, guid: c7827efbbf7212f42803476ce3f9d082, type: 3}
@@ -9993,20 +9884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBehaviour: {fileID: 95781999}
   dialogGraph: {fileID: 11400000, guid: b326b0f55bb41664581a20e05b1b7123, type: 2}
---- !u!114 &1607218652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607218625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f70c7d6b97e8204fb87fb1900d915d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBehaviour: {fileID: 95781999}
-  dialogGraph: {fileID: 11400000, guid: 378a7761df58334499d054334137573c, type: 2}
+  questManager: {fileID: 1521984219}
 --- !u!1001 &1611602226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12810,7 +12688,6 @@ SceneRoots:
   - {fileID: 113711760}
   - {fileID: 949218701}
   - {fileID: 548086893}
-  - {fileID: 898020547}
   - {fileID: 1502055933}
   - {fileID: 2013420931}
   - {fileID: 1422580895}

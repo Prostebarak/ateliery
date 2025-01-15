@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Reputation : MonoBehaviour
 {
-    public int reputationValue = 50;
+    public int reputationValue = 0;
 
-    public void increaseReputation(int increaseValue)
+    public void ChangeReputation(int value)
     {
-        reputationValue += increaseValue;
+        reputationValue += value;
     }
 
-    public void decreaseReputation(int decreaseValue)
-    {
-        reputationValue -= decreaseValue;
-    }
 }

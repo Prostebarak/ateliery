@@ -17,3 +17,4 @@ MonoBehaviour:
   isCompleted: 1
   experienceReward: 0
   rewardItem: {fileID: 0}
+  dialog: {fileID: 11400000, guid: 169a42f4149e48e4fa5cd47222879121, type: 2}

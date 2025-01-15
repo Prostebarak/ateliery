@@ -10,48 +10,46 @@ public class InteractionScript : MonoBehaviour
     public bool dialogueRunning = false;
     public InteractionControler interactionControler;
     public DialogueScript dialogueScript;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Quest targetQuest;
+    public QuestManager questManager;
+    public QuestObjective questObjective;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void DialogueFinished()
     {
         dialogueRunning = false;
         interactionControler.anyDialogRunning = false;
+        questObjective.CompleteQuest();
     }
 
 
     void OnTriggerStay(Collider other)
     {
-        
-        if (other.gameObject.CompareTag("Player"))
-        {
-            bool pressedE = Input.GetKey(KeyCode.E);
-            
-            MeshRenderer meshRendererText = interactionText.GetComponent<MeshRenderer>();
-            if (pressedE && eAlreadyPressed == false)
-            {
-                if (dialogueScript != null)
-                {
-                    interactionControler.anyDialogRunning = true;
-                    dialogueRunning = true;
-                    eAlreadyPressed = true;
-                    meshRendererText.enabled = false;
-                    dialogueScript.dialogueStart();
-                    dialogueScript.dialogBehaviour.AddListenerToDialogFinishedEvent(DialogueFinished);
-                }
-                
-            }
-            
 
+        if (questManager.activeQuests.Contains(targetQuest)) // checks if the target quest that plays is in active quests
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                bool pressedE = Input.GetKey(KeyCode.E);
+
+                MeshRenderer meshRendererText = interactionText.GetComponent<MeshRenderer>();
+                if (pressedE && eAlreadyPressed == false)
+                {
+                    if (dialogueScript != null)
+                    {
+                        interactionControler.anyDialogRunning = true;
+                        dialogueRunning = true;
+                        eAlreadyPressed = true;
+                        meshRendererText.enabled = false;
+                        dialogueScript.dialogueStart();
+                        dialogueScript.dialogBehaviour.AddListenerToDialogFinishedEvent(DialogueFinished);
+
+                    }
+
+                }
+
+
+            }
         }
     }
 }

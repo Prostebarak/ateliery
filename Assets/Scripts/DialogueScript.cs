@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class DialogueScript : MonoBehaviour
 {
-    [SerializeField] public DialogBehaviour dialogBehaviour;
-    [SerializeField] private DialogNodeGraph dialogGraph;
+    public DialogBehaviour dialogBehaviour;
+    public DialogNodeGraph dialogGraph;
+    public QuestManager questManager;
 
-
+    private void Update()
+    {
+        dialogGraph = questManager.activeQuests[0].dialog;
+    }
     public void dialogueStart()
     {
         dialogBehaviour.StartDialog(dialogGraph);

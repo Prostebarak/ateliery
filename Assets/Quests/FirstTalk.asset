@@ -15,6 +15,8 @@ MonoBehaviour:
   questName: Talk to villager
   description: "Starosta t\u011B po\u017E\xE1dal, abys na\u0161el str\xE1\u017Ekyni
     Mirru, kter\xE1 byla posledn\xED, kdo hl\xEDdal artefakt."
-  isCompleted: 0
+  isCompleted: 1
   experienceReward: 10
   rewardItem: {fileID: 0}
+  dialog: {fileID: 11400000, guid: b326b0f55bb41664581a20e05b1b7123, type: 2}
+  reputation: 20
