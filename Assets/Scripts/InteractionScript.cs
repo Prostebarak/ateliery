@@ -40,7 +40,10 @@ public class InteractionScript : MonoBehaviour
                         interactionControler.anyDialogRunning = true;
                         dialogueRunning = true;
                         eAlreadyPressed = true;
-                        meshRendererText.enabled = false;
+                        if (meshRendererText)
+                        {
+                            meshRendererText.enabled = false;
+                        }
                         dialogueScript.dialogueStart();
                         dialogueScript.dialogBehaviour.AddListenerToDialogFinishedEvent(DialogueFinished);
 

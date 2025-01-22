@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,30 +9,34 @@ public class ReputationUI : MonoBehaviour
     public Sprite bestReputation;
     public Sprite midReputation;
     public Sprite badReputation;
+    public Image faceReputation;
+    public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Image>().sprite = badReputation;
+        slider.value = gameObject.GetComponent<Reputation>().reputationValue;
+        faceReputation.sprite = badReputation;
     }
 
     // Update is called once per frame
     void Update()
     {
         Reputation reputation = gameObject.GetComponent<Reputation>();
+        slider.value = reputation.reputationValue;
 
         if (reputation.reputationValue >= 70)
         {
-            gameObject.GetComponent<Image>().sprite = bestReputation;
+            faceReputation.sprite = bestReputation;
         }
 
         else if (reputation.reputationValue < 70 && reputation.reputationValue > 40)
         {
-            gameObject.GetComponent<Image>().sprite = midReputation;
+            faceReputation.sprite = midReputation;
         }
 
         else
         {
-            gameObject.GetComponent<Image>().sprite = badReputation;
+            faceReputation.sprite = badReputation;
         }
     }
 }
