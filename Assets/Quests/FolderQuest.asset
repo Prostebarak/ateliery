@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: baba6ee5592b1724fa8ae55b54c4b0d0, type: 3}
-  m_Name: Prozkoumavani
+  m_Name: FolderQuest
   m_EditorClassIdentifier: 
-  questName: Prozkoumat svatyni artefaktu
-  description: "Projdi zni\u010Denou svatyni uprost\u0159ed lesa a najdi stopy."
-  isCompleted: 1
+  questName: Open Folder
+  description: 
+  isCompleted: 0
   experienceReward: 0
   rewardItem: {fileID: 0}
-  dialog: {fileID: 11400000, guid: f0ec6f4420f547047aa0a679a7af2fae, type: 2}
+  dialog: {fileID: 11400000, guid: 71cb7b5859ffcfa4db533dd5bcf848a9, type: 2}
   reputation: 0

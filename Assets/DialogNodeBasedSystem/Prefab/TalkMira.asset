@@ -16,18 +16,49 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 306
-    y: 170.66667
+    x: -183
+    y: 311.66663
     width: 190
     height: 135
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: 
-    text: 
+    characterName: Mira
+    text: "Pot\u0159ebuje\u0161 ne\u010Do mlad\xEDku?"
     characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
-  childNode: {fileID: 0}
+  childNode: {fileID: 1691780254251407065}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-5136888905044797443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 574
+    y: 269.66666
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mira
+    text: "To v\u016Fbec netu\u0161im, snad naje\u0161 n\u011Bj\xE1k\xE9 stopy v
+      kostele kde byl artefakt st\u0159e\u017Een."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 2043076878548025119}
+  childNode: {fileID: 7180181188200148051}
   isExternalFunc: 0
   externalFunctionName: 
 --- !u!114 &11400000
@@ -44,5 +75,184 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodesList:
   - {fileID: -6993058416870944300}
+  - {fileID: 1691780254251407065}
+  - {fileID: 2043076878548025119}
+  - {fileID: 5579064011730753812}
+  - {fileID: 1731552758839387902}
+  - {fileID: -5136888905044797443}
+  - {fileID: 7037523412811633712}
+  - {fileID: 7180181188200148051}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &1691780254251407065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 8
+    y: 138.66666
+    width: 190
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Hled\xE1m str\xE1\u017Ece Miru."
+  parentSentenceNode: {fileID: -6993058416870944300}
+  childSentenceNodes:
+  - {fileID: 5579064011730753812}
+--- !u!114 &1731552758839387902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 575
+    y: 82.66668
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mira
+    text: "Artefakt byl st\u0159e\u017Een v na\u0161em kostele."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 2043076878548025119}
+  childNode: {fileID: 7180181188200148051}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &2043076878548025119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 347
+    y: 187.66663
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Kde byl v\xE1\u0161 artefakt st\u0159e\u017Een?"
+  - "V\xED\u0161 kdo by mohl ukr\xE1st tak d\u016Fle\u017Eit\xFD artefakt?"
+  parentSentenceNode: {fileID: 5579064011730753812}
+  childSentenceNodes:
+  - {fileID: 1731552758839387902}
+  - {fileID: -5136888905044797443}
+--- !u!114 &5579064011730753812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 164
+    y: 332.66663
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mira
+    text: "To jsem j\xE1! Co pot\u0159ebuje\u0161?"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 1691780254251407065}
+  childNode: {fileID: 2043076878548025119}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7037523412811633712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1138
+    y: 186.66672
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mira
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 0}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7180181188200148051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 838
+    y: 202.66669
+    width: 190
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "D\u011Bkuji ud\u011Bl\xE1m v\u0161e pro to abych ho na\u0161el."
+  parentSentenceNode: {fileID: -5136888905044797443}
+  childSentenceNodes: []

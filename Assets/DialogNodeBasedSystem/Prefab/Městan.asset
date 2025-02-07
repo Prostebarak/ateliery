@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1287
-    y: 368.66666
+    x: 742
+    y: 283.66666
     width: 190
     height: 135
   isDragging: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     text: "Pomoc bude odm\u011Bn\u011Bna! Dostane\u0161 zlato i vd\u011Bk vesnice."
     characterSprite: {fileID: 0}
   parentNode: {fileID: -3842493090247093284}
-  childNode: {fileID: -2982242682578742579}
+  childNode: {fileID: 1552711455846522579}
   isExternalFunc: 0
   externalFunctionName: 
 --- !u!114 &-6520530360123135982
@@ -46,8 +46,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -197
-    y: 378.6667
+    x: -739
+    y: 287.6667
     width: 190
     height: 115
   isDragging: 0
@@ -73,8 +73,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1056
-    y: 250.66666
+    x: 514
+    y: 159.66666
     width: 190
     height: 135
   isDragging: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 330
-    y: 213.66672
+    x: -212
+    y: 122.66672
     width: 190
     height: 135
   isDragging: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 122
-    y: 369.6667
+    x: -347
+    y: 273.6667
     width: 190
     height: 135
   isDragging: 0
@@ -142,10 +142,7 @@ MonoBehaviour:
   sentence:
     characterName: "M\u011B\u0161\u0165an"
     text: "Tento artefakt zaji\u0161\u0165oval \xFArodu, odh\xE1n\u011Bl divok\xE9
-      bestie a chr\xE1nil obyvatele p\u0159ed temn\xFDmi silami.Tento artefakt zaji\u0161\u0165oval
-      \xFArodu, odh\xE1n\u011Bl divok\xE9 bestie a chr\xE1nil obyvatele p\u0159ed
-      temn\xFDmi silami.Tento artefakt zaji\u0161\u0165oval \xFArodu, odh\xE1n\u011Bl
-      divok\xE9 bestie a chr\xE1nil obyvatele p\u0159ed temn\xFDmi silami."
+      bestie a chr\xE1nil obyvatele p\u0159ed temn\xFDmi silami."
     characterSprite: {fileID: 0}
   parentNode: {fileID: 250109508064426979}
   childNode: {fileID: -3342909018372135599}
@@ -167,15 +164,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1509
-    y: 274.6667
+    x: 1233
+    y: 132.66672
     width: 190
     height: 115
   isDragging: 0
   isSelected: 0
   answers:
   - "Dob\u0159e jdu na to!"
-  parentSentenceNode: {fileID: -6590094996898650720}
+  parentSentenceNode: {fileID: 1552711455846522579}
   childSentenceNodes: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -202,6 +199,7 @@ MonoBehaviour:
   - {fileID: 8618221109266587906}
   - {fileID: -6590094996898650720}
   - {fileID: -2982242682578742579}
+  - {fileID: 1552711455846522579}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &250109508064426979
@@ -220,8 +218,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -35
-    y: 209.66669
+    x: -577
+    y: 118.66669
     width: 190
     height: 135
   isDragging: 0
@@ -233,6 +231,36 @@ MonoBehaviour:
     characterSprite: {fileID: 0}
   parentNode: {fileID: -6520530360123135982}
   childNode: {fileID: -3264385051343768911}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1552711455846522579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1019
+    y: 287.66666
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "M\u011B\u0161\u0165an"
+    text: "M\xE1 d\u016Fm nakonci vesnice."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -6590094996898650720}
+  childNode: {fileID: -2982242682578742579}
   isExternalFunc: 0
   externalFunctionName: 
 --- !u!114 &3351895580875393073
@@ -251,8 +279,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 741
-    y: 235.66669
+    x: 199
+    y: 144.66669
     width: 190
     height: 115
   isDragging: 0
@@ -278,8 +306,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 525
-    y: 370.6667
+    x: -17
+    y: 279.6667
     width: 190
     height: 135
   isDragging: 0
@@ -309,8 +337,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -322
-    y: 202.66672
+    x: -864
+    y: 111.66672
     width: 190
     height: 135
   isDragging: 0
@@ -339,8 +367,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 861
-    y: 376.6667
+    x: 327
+    y: 289.6667
     width: 190
     height: 135
   isDragging: 0
@@ -370,15 +398,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1270
-    y: 170.66666
+    x: 728
+    y: 79.66666
     width: 190
     height: 135
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: "M\u011B\u0161\u0165an"
-    text: "M\xE1 d\u016Fm nakonci vesnice.Hned"
+    text: "M\xE1 d\u016Fm nakonci vesnice."
     characterSprite: {fileID: 0}
   parentNode: {fileID: -3842493090247093284}
   childNode: {fileID: -2982242682578742579}

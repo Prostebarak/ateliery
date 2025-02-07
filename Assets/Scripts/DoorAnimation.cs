@@ -10,9 +10,13 @@ public class DoorAnimation : MonoBehaviour
     {
         animator.enabled = false;
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        animator.enabled = true;
+        bool pressedE = Input.GetKey(KeyCode.E);
+        if (pressedE)
+        {
+            animator.enabled = true;
+        }
     }
 
 }

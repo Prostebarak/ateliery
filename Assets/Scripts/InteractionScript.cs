@@ -13,7 +13,7 @@ public class InteractionScript : MonoBehaviour
     public Quest targetQuest;
     public QuestManager questManager;
     public QuestObjective questObjective;
-
+    MeshRenderer meshRendererText;
 
     void DialogueFinished()
     {
@@ -31,8 +31,11 @@ public class InteractionScript : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
                 bool pressedE = Input.GetKey(KeyCode.E);
-
-                MeshRenderer meshRendererText = interactionText.GetComponent<MeshRenderer>();
+                if (interactionText)
+                {
+                    meshRendererText = interactionText.GetComponent<MeshRenderer>();
+                }
+                
                 if (pressedE && eAlreadyPressed == false)
                 {
                     if (dialogueScript != null)
